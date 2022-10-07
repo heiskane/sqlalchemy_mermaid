@@ -1,6 +1,6 @@
 # SQLAlchemy-Mermaid
 
-Mosty a quick (and dirty) script to generate a [mermaid](https://mermaid-js.github.io/mermaid/) erDiagram from [SQLAlchemy](https://github.com/sqlalchemy/sqlalchemy) metadata object
+Mostly a quick (and dirty) script to generate a [mermaid](https://mermaid-js.github.io/mermaid/) erDiagram from [SQLAlchemy](https://github.com/sqlalchemy/sqlalchemy) metadata object
 
 ## Usage
 
