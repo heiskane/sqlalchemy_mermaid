@@ -118,6 +118,7 @@ class StaffRole(Base):
 
 
 def main() -> None:
+    """Print out a mermaid erDiagram in a proper markdown code block"""
     mermaid_diagram = create_mermaid_diagram(Base)
 
     print("```mermaid")
