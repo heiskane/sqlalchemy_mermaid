@@ -121,9 +121,12 @@ def main() -> None:
     """Print out a mermaid erDiagram in a proper markdown code block"""
     mermaid_diagram = create_mermaid_diagram(Base)
 
-    print("```mermaid")
-    print(mermaid_diagram)
-    print("```")
+    code_block = "```mermaid\n"
+    code_block += mermaid_diagram
+    code_block += "```"
+
+    with open("example_result.md", "w", encoding="utf-8") as f:
+        f.writelines(code_block)
 
 
 if __name__ == "__main__":

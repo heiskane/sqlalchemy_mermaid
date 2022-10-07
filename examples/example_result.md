@@ -68,5 +68,4 @@ erDiagram
   trips  }|--|| trip_staff : "trip_id"
   staff  }|--|| trip_staff : "staff_id"
   countries  }o--|| trips : "country_id"
-
 ```

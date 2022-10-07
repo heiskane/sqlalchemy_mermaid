@@ -12,11 +12,14 @@ Base = declarative_base()
 
 # Define tables here or import Base from somewhere else
 
-print("```mermaid")
-print(create_mermaid_diagram(Base))
-print("```")
+mermaid_diagram = create_mermaid_diagram(Base)
 
-# python script.py > db_diagram.md
+code_block = "```mermaid\n"
+code_block += mermaid_diagram
+code_block += "```"
+
+with open("example_result.md", "w", encoding="utf-8") as f:
+    f.writelines(code_block)
 ```
 
 Example result (after rendering in VSCode):
