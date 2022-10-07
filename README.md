@@ -18,3 +18,6 @@ print("```")
 
 # python script.py > db_diagram.md
 ```
+
+Example result (after rendering in VSCode):
+![example db diagram](example_result.png)
