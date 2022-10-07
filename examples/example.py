@@ -117,8 +117,13 @@ class StaffRole(Base):
     name = Column(String(50), nullable=False, unique=True)
 
 
-mermaid_diagram = create_mermaid_diagram(Base)
+def main() -> None:
+    mermaid_diagram = create_mermaid_diagram(Base)
 
-print("```mermaid")
-print(mermaid_diagram)
-print("```")
+    print("```mermaid")
+    print(mermaid_diagram)
+    print("```")
+
+
+if __name__ == "__main__":
+    main()
