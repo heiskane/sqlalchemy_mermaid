@@ -11,6 +11,7 @@ def create_mermaid_diagram(base: DeclarativeMeta) -> str:
     for table in tables:
         mermaid_diagram += f"  {table.name} {{"
         for column in table.columns:
+            # Get rid of bad characters
             column_type = re.sub(r"[^a-zA-Z]", "", str(column.type))
             mermaid_diagram += f"\n    {column_type} {column.name}"
 
